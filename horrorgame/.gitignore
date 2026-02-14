@@ -1,3 +1,9 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
+
+# Jenova SDK and runtime files
+Jenova/
+
+
+.vscode/
