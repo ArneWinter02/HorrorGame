@@ -1,3 +1,8 @@
 [gd_scene format=3 uid="uid://bij7bgjbrx1if"]
 
-[node name="Node3D" type="Node3D" unique_id=192935831]
+[ext_resource type="Script" uid="uid://b2eh3wq8n1f26" path="res://Characters/Player/Player.cpp" id="1_cbkw2"]
+
+[node name="Node3D" type="CharacterBody3D" unique_id=1196599978]
+script = ExtResource("1_cbkw2")
+
+[node name="Node3D" type="Sprite3D" parent="." unique_id=1406378135]
