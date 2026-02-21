@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://cqv7eytpuhq8"]
+
+[ext_resource type="Script" uid="uid://b1cno017mf0kx" path="res://test.cpp" id="1_37kl0"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_mf4mk"]
+font_size = 32
+
+[node name="Test123" type="Node2D" unique_id=1362505227]
+script = ExtResource("1_37kl0")
+score = 0
+"label stuff/labelText" = "Na, öfter hier?"
+dummy_state = 0
+
+[node name="GUI" type="CanvasLayer" parent="." unique_id=1271539887]
+
+[node name="Label" type="Label" parent="GUI" unique_id=1619183709]
+offset_left = 823.0
+offset_top = 487.0
+offset_right = 958.0
+offset_bottom = 532.0
+text = "asdagsdi"
+label_settings = SubResource("LabelSettings_mf4mk")
+
+[node name="Button" type="Button" parent="GUI" unique_id=2035690402]
+offset_left = 801.0
+offset_top = 363.0
+offset_right = 975.0
+offset_bottom = 447.0
+text = "drück mich"
+
+[connection signal="pressed" from="GUI/Button" to="." method="_on_button_pressed"]
